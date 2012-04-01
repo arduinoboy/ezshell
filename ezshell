@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo Enter File name:
+
+read file
+
+echo file
+
+touch $file
+
+echo Touched File "$file" !
+
+echo '#!/bin/bash' >  "$file"
+
+nano $file
+
+chmod +x $file
+
+echo $file is now an executable.
+
+
+
