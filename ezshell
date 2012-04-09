@@ -12,7 +12,11 @@ echo Touched File "$file" !
 
 echo '#!/bin/bash' >  "$file"
 
-nano $file
+//nano $file
+
+cat $file
+
+cat << EOF >> $file
 
 chmod +x $file
 
