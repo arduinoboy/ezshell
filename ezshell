@@ -1,18 +1,22 @@
 #!/bin/bash
 
+## Reads File name
+
 echo Enter File name:
 
 read file
 
 echo file
 
+## Creates File
+
 touch $file
 
 echo Touched File "$file" !
 
-echo '#!/bin/bash' >  "$file"
+## Adds bash prefix
 
-##nano $file
+echo '#!/bin/bash' >  "$file"
 
 cat $file
 
